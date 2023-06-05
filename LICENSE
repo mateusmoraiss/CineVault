@@ -9,13 +9,46 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+- The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+- The Software, or any derivative works thereof, may not be used for commercial purposes
+  without the express written permission of Mateus Morais.
+- Any academic use of the Software must credit Mateus Morais by including a link to
+  the GitHub repository: [https://github.com/mateusmoraiss](https://github.com/mateusmoraiss).
+- The Software is provided "as is", without warranty of any kind, express or implied,
+  including but not limited to the warranties of merchantability, fitness for a particular
+  purpose and noninfringement. In no event shall the authors or copyright holders be
+  liable for any claim, damages or other liability, whether in an action of contract,
+  tort or otherwise, arising from, out of or in connection with the Software or the use
+  or other dealings in the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This is an updated version of the MIT License with additional terms. The official and
+legally binding version is the original English version.
+
+------------------------------------------------------------------------------------
+Licença MIT
+
+Direitos autorais (c) 2023 Mateus Morais
+
+Por meio desta licença, é concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o "Software"), para lidar
+com o Software sem restrições, incluindo, sem limitação, os direitos
+de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software, e permitir que as pessoas a quem o Software é
+fornecido o façam, sujeito às seguintes condições:
+
+- O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas
+  as cópias ou partes substanciais do Software.
+- O Software, ou qualquer trabalho derivado dele, não pode ser utilizado para fins comerciais
+  sem a permissão expressa por escrito de Mateus Morais.
+- Qualquer uso acadêmico do Software deve creditar Mateus Morais, incluindo um link para
+  o repositório do GitHub: [https://github.com/mateusmoraiss](https://github.com/mateusmoraiss).
+- O Software é fornecido "como está", sem garantia de qualquer tipo, expressa ou implícita,
+  incluindo, mas não se limitando a, garantias de comercialização, adequação a uma finalidade específica
+  e não violação. Em nenhuma circunstância, os autores ou detentores dos direitos autorais
+  serão responsabilizados por qualquer reclamação, danos ou outra responsabilidade, seja em uma ação de contrato,
+  delito ou de outra forma, decorrente de, fora ou em conexão com o Software ou o uso
+  ou outras atividades relacionadas ao Software.
+
+Esta é uma versão atualizada da Licença MIT com termos adicionais. A versão oficial e
+juridicamente vinculante é a versão original em inglês.
