@@ -16,13 +16,9 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS series (
                 )''')
 
 conexao.commit()
-print("Olá! Bem-vindo ao CineVault - o seu app para gerenciar séries e filmes e visualizá-los em um gráfico.")
+print("Olá! Bem-vindo ao CineVault - Meu app para gerenciar séries e filmes e visualizá-los em um gráfico.")
 print("Copyright - Mateus Morais 2023")
 print("GitHub: https://github.com/mateusmoraiss")
-input("\nPressione Enter para fechar...")
+input("\nAs tabelas foram criadas com sucesso!!")
 
-
-
-
-# Fechando a conexão 
 conexao.close()
