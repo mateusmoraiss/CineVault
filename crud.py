@@ -17,6 +17,26 @@ def adicionar_serie():
     conexao.commit()
     print("Série adicionada com sucesso!")
 
+def atualizar_dado():
+    tabela = input("Digite a tabela (1 para Série ou 2 para Filme): ")
+    item_id = int(input("Digite o ID do item a ser atualizado: "))
+
+    if tabela == '1':
+        nome = input("Digite o novo nome da série: ")
+        nota = float(input("Digite a nova nota da série: "))
+        cursor.execute("UPDATE series SET nome = ?, nota = ? WHERE id = ?", (nome, nota, item_id))
+        conexao.commit()
+        print("Dado da série atualizado com sucesso!")
+    elif tabela == '2':
+        nome = input("Digite o novo nome do filme: ")
+        nota = float(input("Digite a nova nota do filme: "))
+        cursor.execute("UPDATE filmes SET nome = ?, nota = ? WHERE id = ?", (nome, nota, item_id))
+        conexao.commit()
+        print("Dado do filme atualizado com sucesso!")
+    else:
+        print("Opção inválida. Tente novamente.")
+
+
 def remover_item():
     tabela = input("Digite a tabela (1 para Série ou 2 para Filme): ")
     item_id = int(input("Digite o ID do item a ser removido: "))
@@ -52,8 +72,9 @@ while True:
     print("1. Adicionar série")
     print("2. Adicionar filme")
     print("3. Remover item")
-    print("4. Exibir dados")
-    print("5. Sair")
+    print("4. Atualizar dados")
+    print("5. Exibir dados")
+    print("6. Sair")
 
     opcao = input("Digite o número correspondente à opção desejada: ")
 
@@ -64,8 +85,10 @@ while True:
     elif opcao == '3':
         remover_item()
     elif opcao == '4':
-        exibir_dados()
+        atualizar_dado()
     elif opcao == '5':
+        exibir_dados()
+    elif opcao == '6':
         break
     else:
         print("Opção inválida. Tente novamente.")
