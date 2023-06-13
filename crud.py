@@ -22,19 +22,48 @@ def atualizar_dado():
     item_id = int(input("Digite o ID do item a ser atualizado: "))
 
     if tabela == '1':
-        nome = input("Digite o novo nome da série: ")
-        nota = float(input("Digite a nova nota da série: "))
+        cursor.execute("SELECT nome, nota FROM series WHERE id = ?", (item_id,))
+        serie = cursor.fetchone()
+        nome_atual = serie[0]
+        nota_atual = serie[1]
+
+        nome = input(f"Digite o novo nome da série ({nome_atual}): ")
+        nota = input(f"Digite a nova nota da série ({nota_atual}): ")
+
+        if nome.strip() == '':
+            nome = nome_atual
+
+        if nota.strip() == '':
+            nota = nota_atual
+        else:
+            nota = float(nota)
+
         cursor.execute("UPDATE series SET nome = ?, nota = ? WHERE id = ?", (nome, nota, item_id))
         conexao.commit()
         print("Dado da série atualizado com sucesso!")
     elif tabela == '2':
-        nome = input("Digite o novo nome do filme: ")
-        nota = float(input("Digite a nova nota do filme: "))
+        cursor.execute("SELECT nome, nota FROM filmes WHERE id = ?", (item_id,))
+        filme = cursor.fetchone()
+        nome_atual = filme[0]
+        nota_atual = filme[1]
+
+        nome = input(f"Digite o novo nome do filme ({nome_atual}): ")
+        nota = input(f"Digite a nova nota do filme ({nota_atual}): ")
+
+        if nome.strip() == '':
+            nome = nome_atual
+
+        if nota.strip() == '':
+            nota = nota_atual
+        else:
+            nota = float(nota)
+
         cursor.execute("UPDATE filmes SET nome = ?, nota = ? WHERE id = ?", (nome, nota, item_id))
         conexao.commit()
         print("Dado do filme atualizado com sucesso!")
     else:
         print("Opção inválida. Tente novamente.")
+
 
 
 def remover_item():
